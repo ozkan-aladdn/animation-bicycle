@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+  }
+  
+  .container {
+    height: 100vh;
+    max-width: 100%;
+    background-image: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+  /* ---------------------------------- */
+  .trees {
+    background-image: url(./img/trees.png);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  /* ---------------------------------- */
+  
+  .girl img {
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+    width: 300px;
+    z-index: 1;
+    animation: bicycle 9s linear infinite normal;
+  }
+  
+  @keyframes bicycle {
+    100% {
+      transform: translate(-2000px);
+    }
+  }
+  /* ---------------------------------- */
+  
+  .leafs {
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+  }
+  
+  .leafs img {
+    width: 50px;
+    z-index: 2;
+    animation: leafs1 8s ease-in-out infinite normal;
+  }
+  
+  @keyframes leafs1 {
+    100% {
+      transform: translateY(1000px);
+    }
+  }
+  
+  /* ---------------------------------- */
+  .leafs2 {
+    width: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20rem;
+  }
+  
+  .leafs2 img {
+    width: 50px;
+    animation: leafs1 8s ease-in-out 1s infinite normal;
+  }
+  
+  @keyframes leafs2 {
+    100% {
+      transform: translateY(1000px);
+    }
+  }
+  
